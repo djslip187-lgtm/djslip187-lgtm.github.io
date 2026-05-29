@@ -1,0 +1,315 @@
+<svg viewBox="0 0 1217 817" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <!-- Halftone dot pattern for billboard -->
+  <pattern id="dots" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+    <circle cx="11" cy="11" r="4.5" fill="#9dc800"/>
+  </pattern>
+  <!-- Fade mask: dots appear only on right side of billboard -->
+  <linearGradient id="dotFade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="white" stop-opacity="0"/>
+    <stop offset="35%"  stop-color="white" stop-opacity="0"/>
+    <stop offset="65%"  stop-color="white" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="white" stop-opacity="0.65"/>
+  </linearGradient>
+  <mask id="dotMask">
+    <rect x="180" y="12" width="762" height="182" fill="url(#dotFade)"/>
+  </mask>
+
+  <!-- Soft drop shadow -->
+  <filter id="sh" x="-8%" y="-8%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#000" flood-opacity="0.55"/>
+  </filter>
+  <filter id="sh-sm" x="-8%" y="-8%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.45"/>
+  </filter>
+  <filter id="sh-xs" x="-10%" y="-10%" width="130%" height="140%">
+    <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+  </filter>
+
+  <!-- Gradient for grass ground shadow -->
+  <radialGradient id="grassShadow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#000" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+
+<!-- ══════════════════════════════════════════
+     BILLBOARD
+══════════════════════════════════════════ -->
+<g filter="url(#sh)">
+  <!-- Main face -->
+  <rect x="180" y="12" width="762" height="182" rx="5" fill="#0e0e0e"/>
+  <!-- Halftone overlay -->
+  <rect x="180" y="12" width="762" height="182" rx="5" fill="url(#dots)" mask="url(#dotMask)"/>
+  <!-- Left green accent bar -->
+  <rect x="180" y="12" width="7" height="182" rx="2" fill="#9dc800"/>
+  <!-- Bottom trim line -->
+  <rect x="187" y="186" width="755" height="4" rx="1" fill="#9dc800" opacity="0.4"/>
+  <!-- Subtle border -->
+  <rect x="180" y="12" width="762" height="182" rx="5" fill="none" stroke="#252525" stroke-width="2"/>
+
+  <!-- CUSTOM label -->
+  <text x="220" y="60" font-family="'Arial Black','Impact',sans-serif" font-size="17" font-weight="900" fill="#9dc800" letter-spacing="5">CUSTOM</text>
+  <!-- BILLBOARD DESIGN -->
+  <text x="216" y="118" font-family="'Arial Black','Impact',sans-serif" font-size="58" font-weight="900" fill="#f5f5f2" letter-spacing="-1">BILLBOARD</text>
+  <text x="216" y="168" font-family="'Arial Black','Impact',sans-serif" font-size="58" font-weight="900" fill="#f5f5f2" letter-spacing="-1">DESIGN</text>
+  <!-- Services italic -->
+  <text x="570" y="168" font-family="Georgia,'Times New Roman',serif" font-size="36" font-style="italic" fill="#9dc800">Services</text>
+  <!-- URL -->
+  <text x="926" y="191" font-family="'Courier New',monospace" font-size="11" fill="#444" text-anchor="end">www.fantasticsigns.com</text>
+</g>
+
+<!-- Billboard support poles -->
+<rect x="328" y="194" width="10" height="155" rx="2" fill="#1c1c1c"/>
+<rect x="788" y="194" width="10" height="155" rx="2" fill="#1c1c1c"/>
+<!-- Cross brace -->
+<line x1="333" y1="270" x2="793" y2="270" stroke="#181818" stroke-width="4"/>
+
+
+<!-- ══════════════════════════════════════════
+     RETRACTABLE BANNER  (far right)
+══════════════════════════════════════════ -->
+<g filter="url(#sh-sm)">
+  <!-- Banner body -->
+  <rect x="988" y="158" width="165" height="458" rx="5" fill="#0c0c0c"/>
+  <!-- Top green stripe -->
+  <rect x="988" y="158" width="165" height="16" rx="3" fill="#9dc800"/>
+  <!-- Bottom green stripe -->
+  <rect x="988" y="600" width="165" height="16" rx="2" fill="#84aa3f"/>
+  <!-- Border -->
+  <rect x="988" y="158" width="165" height="458" rx="5" fill="none" stroke="#222" stroke-width="1.5"/>
+
+  <!-- Accent divider line -->
+  <rect x="1005" y="192" width="131" height="2.5" fill="#9dc800"/>
+
+  <!-- RETRACTABLE -->
+  <text x="1070" y="242" font-family="'Arial Black','Impact',sans-serif" font-size="19" font-weight="900" fill="#f5f5f2" text-anchor="middle" letter-spacing="1">RETRACTABLE</text>
+  <!-- BANNERS large -->
+  <text x="1070" y="294" font-family="'Arial Black','Impact',sans-serif" font-size="42" font-weight="900" fill="#9dc800" text-anchor="middle" letter-spacing="-0.5">BANNERS</text>
+  <!-- Divider -->
+  <rect x="1005" y="308" width="131" height="1.5" fill="#252525"/>
+  <!-- FOR ANY TYPE OF -->
+  <text x="1070" y="345" font-family="Arial,sans-serif" font-size="13" fill="#999" text-anchor="middle" letter-spacing="1">FOR ANY TYPE OF</text>
+  <!-- BUSINESS -->
+  <text x="1070" y="378" font-family="'Arial Black','Impact',sans-serif" font-size="30" font-weight="900" fill="#f5f5f2" text-anchor="middle">BUSINESS</text>
+
+  <!-- Body copy lines -->
+  <rect x="1012" y="398" width="117" height="1" fill="#222"/>
+  <text x="1070" y="420" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">LIGHTWEIGHT · PORTABLE</text>
+  <text x="1070" y="437" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">QUICK SETUP · FULL COLOR</text>
+  <rect x="1012" y="450" width="117" height="1" fill="#222"/>
+
+  <!-- Logo block -->
+  <rect x="1016" y="510" width="109" height="65" rx="4" fill="#9dc800" opacity="0.08"/>
+  <rect x="1016" y="510" width="109" height="65" rx="4" fill="none" stroke="#9dc800" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1070" y="543" font-family="Georgia,serif" font-size="16" font-style="italic" fill="#9dc800" text-anchor="middle">SignsRGreat</text>
+  <text x="1070" y="563" font-family="'Courier New',monospace" font-size="8" fill="#444" text-anchor="middle">www.fantasticsigns.com</text>
+</g>
+
+<!-- Retractable banner pole -->
+<rect x="1067" y="616" width="7" height="68" rx="2" fill="#1e1e1e"/>
+<!-- Base housing -->
+<rect x="1008" y="678" width="125" height="18" rx="5" fill="#181818" stroke="#252525" stroke-width="1.5"/>
+<!-- Base feet -->
+<rect x="1000" y="692" width="42" height="8" rx="2" fill="#151515"/>
+<rect x="1099" y="692" width="42" height="8" rx="2" fill="#151515"/>
+
+
+<!-- ══════════════════════════════════════════
+     LEFT CLUSTER — VERTICAL BANNER (behind)
+══════════════════════════════════════════ -->
+<g filter="url(#sh-xs)" transform="rotate(-4, 175, 460)">
+  <rect x="88" y="252" width="175" height="340" rx="4" fill="#0b0b0b" stroke="#202020" stroke-width="1.5"/>
+  <rect x="88" y="252" width="175" height="12" rx="2" fill="#84aa3f"/>
+  <text x="175" y="306" font-family="'Arial Black','Impact',sans-serif" font-size="13" font-weight="900" fill="#9dc800" text-anchor="middle" letter-spacing="3">CUSTOM</text>
+  <text x="175" y="338" font-family="'Arial Black','Impact',sans-serif" font-size="28" font-weight="900" fill="#f5f5f2" text-anchor="middle">VERTICAL</text>
+  <text x="175" y="368" font-family="'Arial Black','Impact',sans-serif" font-size="28" font-weight="900" fill="#f5f5f2" text-anchor="middle">BANNER</text>
+  <text x="175" y="396" font-family="'Arial Black','Impact',sans-serif" font-size="22" font-weight="900" fill="#9dc800" text-anchor="middle">DESIGN</text>
+  <rect x="104" y="412" width="143" height="1" fill="#252525"/>
+  <text x="175" y="436" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">FULL-COLOR PRINT</text>
+  <text x="175" y="452" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">ANY SIZE · FAST TURNAROUND</text>
+</g>
+
+
+<!-- ══════════════════════════════════════════
+     LEFT CLUSTER — MAIN YARD SIGN (front)
+══════════════════════════════════════════ -->
+<g filter="url(#sh-sm)">
+  <!-- Sign face -->
+  <rect x="95" y="330" width="310" height="238" rx="5" fill="#0d0d0d"/>
+  <!-- Green top bar -->
+  <rect x="95" y="330" width="310" height="14" rx="3" fill="#9dc800"/>
+  <!-- Green bottom bar -->
+  <rect x="95" y="554" width="310" height="10" rx="2" fill="#84aa3f" opacity="0.6"/>
+  <!-- Border -->
+  <rect x="95" y="330" width="310" height="238" rx="5" fill="none" stroke="#222" stroke-width="2"/>
+  <!-- Inner border accent -->
+  <rect x="106" y="356" width="288" height="210" rx="3" fill="none" stroke="#1c1c1c" stroke-width="1"/>
+
+  <!-- CUSTOM -->
+  <text x="250" y="398" font-family="'Arial Black','Impact',sans-serif" font-size="16" font-weight="900" fill="#9dc800" text-anchor="middle" letter-spacing="4">CUSTOM</text>
+  <!-- YARD SIGN -->
+  <text x="250" y="446" font-family="'Arial Black','Impact',sans-serif" font-size="44" font-weight="900" fill="#f5f5f2" text-anchor="middle" letter-spacing="-0.5">YARD SIGN</text>
+  <!-- DESIGN -->
+  <text x="250" y="492" font-family="'Arial Black','Impact',sans-serif" font-size="44" font-weight="900" fill="#f5f5f2" text-anchor="middle" letter-spacing="-0.5">DESIGN</text>
+  <!-- URL bar -->
+  <rect x="106" y="508" width="288" height="1.5" fill="#252525"/>
+  <text x="250" y="532" font-family="'Courier New',monospace" font-size="11" fill="#484848" text-anchor="middle">www.fantasticsigns.com</text>
+  <!-- Small logo -->
+  <text x="250" y="552" font-family="Georgia,serif" font-size="11" font-style="italic" fill="#9dc800" text-anchor="middle">SignsRGreat</text>
+</g>
+<!-- Yard sign stakes -->
+<rect x="176" y="568" width="9" height="130" rx="2" fill="#242424"/>
+<rect x="315" y="568" width="9" height="130" rx="2" fill="#242424"/>
+
+
+<!-- ══════════════════════════════════════════
+     CENTER — 4-FRAME / A-FRAME SIGN
+══════════════════════════════════════════ -->
+<g filter="url(#sh-sm)">
+  <!-- Left panel (slight angle) -->
+  <polygon points="476,295 640,295 630,658 466,658" fill="#0d0d0d"/>
+  <polygon points="476,295 640,295 640,312 476,312" fill="#9dc800"/>
+  <polygon points="476,295 640,295 630,658 466,658" fill="none" stroke="#222" stroke-width="1.5"/>
+
+  <!-- Right panel -->
+  <polygon points="646,295 808,295 818,658 656,658" fill="#111"/>
+  <polygon points="646,295 808,295 808,312" fill="#84aa3f"/>
+  <polygon points="646,295 808,295 818,658 656,658" fill="none" stroke="#222" stroke-width="1.5"/>
+
+  <!-- Spine / hinge -->
+  <rect x="638" y="293" width="8" height="367" fill="#1a1a1a"/>
+
+  <!-- Left panel content -->
+  <text x="555" y="358" font-family="'Arial Black','Impact',sans-serif" font-size="13" font-weight="900" fill="#9dc800" text-anchor="middle" letter-spacing="2">4-FRAME SIGN</text>
+  <text x="555" y="400" font-family="'Arial Black','Impact',sans-serif" font-size="36" font-weight="900" fill="#f5f5f2" text-anchor="middle">DESIGN</text>
+  <text x="555" y="438" font-family="'Arial Black','Impact',sans-serif" font-size="36" font-weight="900" fill="#f5f5f2" text-anchor="middle">SERVICES</text>
+  <rect x="488" y="455" width="140" height="1.5" fill="#252525"/>
+  <text x="555" y="479" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">SIDEWALK · OUTDOOR</text>
+  <text x="555" y="496" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">PROMOTIONAL DISPLAY</text>
+  <text x="555" y="513" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">LIGHTWEIGHT ALUMINUM</text>
+
+  <!-- Right panel content -->
+  <rect x="660" y="338" width="134" height="80" rx="4" fill="#9dc800" opacity="0.07"/>
+  <rect x="660" y="338" width="134" height="80" rx="4" fill="none" stroke="#9dc800" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="727" y="372" font-family="Georgia,serif" font-size="18" font-style="italic" fill="#9dc800" text-anchor="middle">Fantastic</text>
+  <text x="727" y="396" font-family="'Arial Black',sans-serif" font-size="18" font-weight="900" fill="#f5f5f2" text-anchor="middle">SIGNS</text>
+
+  <rect x="662" y="432" width="132" height="1" fill="#222"/>
+  <text x="727" y="457" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">FULL COLOR GRAPHICS</text>
+  <text x="727" y="473" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">WEATHER RESISTANT</text>
+  <text x="727" y="489" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">REUSABLE INSERTS</text>
+
+  <!-- Base feet -->
+  <rect x="460" y="650" width="185" height="12" rx="4" fill="#181818" stroke="#252525" stroke-width="1.2"/>
+  <rect x="650" y="650" width="175" height="12" rx="4" fill="#181818" stroke="#252525" stroke-width="1.2"/>
+  <rect x="452" y="660" width="50" height="8" rx="2" fill="#141414"/>
+  <rect x="578" y="660" width="50" height="8" rx="2" fill="#141414"/>
+  <rect x="642" y="660" width="50" height="8" rx="2" fill="#141414"/>
+  <rect x="772" y="660" width="50" height="8" rx="2" fill="#141414"/>
+</g>
+
+
+<!-- ══════════════════════════════════════════
+     GRASS — under yard sign (left)
+══════════════════════════════════════════ -->
+<g>
+  <!-- Ground shadow -->
+  <ellipse cx="248" cy="698" rx="115" ry="14" fill="url(#grassShadow)"/>
+
+  <!-- Grass blades — back row -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M138,700 Q141,660 145,695" stroke="#3a6800" stroke-width="3.5"/>
+    <path d="M150,699 Q155,650 159,694" stroke="#4a8200" stroke-width="3.5"/>
+    <path d="M164,698 Q167,655 172,694" stroke="#3a6800" stroke-width="3"/>
+    <path d="M178,698 Q175,658 181,694" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M193,697 Q196,648 200,693" stroke="#4a8200" stroke-width="3.5"/>
+    <path d="M208,697 Q211,654 215,693" stroke="#3a6800" stroke-width="3"/>
+    <path d="M222,697 Q219,652 225,693" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M237,697 Q240,650 244,693" stroke="#4a8200" stroke-width="3.5"/>
+    <path d="M252,697 Q255,653 259,693" stroke="#3a6800" stroke-width="3"/>
+    <path d="M266,697 Q263,650 269,693" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M280,698 Q283,655 287,694" stroke="#4a8200" stroke-width="3.5"/>
+    <path d="M294,698 Q297,651 301,694" stroke="#3a6800" stroke-width="3"/>
+    <path d="M308,698 Q305,657 311,695" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M322,699 Q325,653 328,695" stroke="#4a8200" stroke-width="3"/>
+    <path d="M335,699 Q332,660 338,696" stroke="#3a6800" stroke-width="3.5"/>
+    <path d="M348,699 Q351,655 354,696" stroke="#5a9a00" stroke-width="3"/>
+  </g>
+
+  <!-- Grass blades — front row (taller, brighter) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M142,700 Q148,645 152,697" stroke="#6ab800" stroke-width="4"/>
+    <path d="M158,700 Q160,638 165,696" stroke="#78cc00" stroke-width="4"/>
+    <path d="M172,700 Q176,642 180,697" stroke="#6ab800" stroke-width="3.5"/>
+    <path d="M186,699 Q182,640 190,696" stroke="#78cc00" stroke-width="4"/>
+    <path d="M200,699 Q204,636 208,696" stroke="#6ab800" stroke-width="4"/>
+    <path d="M215,698 Q212,640 219,695" stroke="#78cc00" stroke-width="3.5"/>
+    <path d="M229,698 Q233,638 237,695" stroke="#6ab800" stroke-width="4"/>
+    <path d="M244,698 Q247,635 251,695" stroke="#78cc00" stroke-width="4"/>
+    <path d="M258,698 Q255,640 262,695" stroke="#6ab800" stroke-width="3.5"/>
+    <path d="M272,698 Q276,637 280,695" stroke="#78cc00" stroke-width="4"/>
+    <path d="M286,699 Q289,641 293,696" stroke="#6ab800" stroke-width="4"/>
+    <path d="M300,699 Q297,638 304,696" stroke="#78cc00" stroke-width="3.5"/>
+    <path d="M314,699 Q318,642 322,696" stroke="#6ab800" stroke-width="4"/>
+    <path d="M328,699 Q325,637 332,697" stroke="#78cc00" stroke-width="4"/>
+  </g>
+</g>
+
+
+<!-- ══════════════════════════════════════════
+     GRASS — under A-frame (center)
+══════════════════════════════════════════ -->
+<g>
+  <ellipse cx="640" cy="674" rx="145" ry="14" fill="url(#grassShadow)"/>
+
+  <!-- Back row -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M498,673 Q501,638 505,669" stroke="#3a6800" stroke-width="3.5"/>
+    <path d="M513,672 Q517,630 521,668" stroke="#4a8200" stroke-width="3.5"/>
+    <path d="M528,672 Q531,635 535,668" stroke="#3a6800" stroke-width="3"/>
+    <path d="M543,672 Q540,632 547,668" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M558,671 Q561,628 565,668" stroke="#4a8200" stroke-width="3.5"/>
+    <path d="M573,671 Q576,632 580,668" stroke="#3a6800" stroke-width="3"/>
+    <path d="M588,671 Q585,630 592,668" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M603,671 Q606,628 610,668" stroke="#4a8200" stroke-width="3.5"/>
+    <path d="M618,671 Q621,631 625,668" stroke="#3a6800" stroke-width="3"/>
+    <path d="M633,671 Q630,629 637,668" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M648,671 Q651,633 655,668" stroke="#4a8200" stroke-width="3.5"/>
+    <path d="M663,672 Q666,629 670,669" stroke="#3a6800" stroke-width="3"/>
+    <path d="M678,672 Q675,635 682,669" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M693,672 Q696,631 699,669" stroke="#4a8200" stroke-width="3"/>
+    <path d="M708,672 Q705,636 712,670" stroke="#3a6800" stroke-width="3.5"/>
+    <path d="M723,673 Q726,631 729,670" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M738,673 Q735,637 742,671" stroke="#4a8200" stroke-width="3"/>
+    <path d="M752,673 Q755,633 758,671" stroke="#3a6800" stroke-width="3.5"/>
+    <path d="M766,674 Q763,638 770,671" stroke="#5a9a00" stroke-width="3"/>
+    <path d="M780,674 Q783,634 786,671" stroke="#4a8200" stroke-width="3.5"/>
+  </g>
+
+  <!-- Front row -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M502,673 Q508,622 512,670" stroke="#6ab800" stroke-width="4"/>
+    <path d="M518,673 Q520,615 525,669" stroke="#78cc00" stroke-width="4"/>
+    <path d="M534,672 Q538,618 542,669" stroke="#6ab800" stroke-width="3.5"/>
+    <path d="M549,672 Q545,616 554,669" stroke="#78cc00" stroke-width="4"/>
+    <path d="M565,671 Q569,613 573,668" stroke="#6ab800" stroke-width="4"/>
+    <path d="M580,671 Q577,617 585,668" stroke="#78cc00" stroke-width="3.5"/>
+    <path d="M595,671 Q599,615 603,668" stroke="#6ab800" stroke-width="4"/>
+    <path d="M611,670 Q614,612 618,668" stroke="#78cc00" stroke-width="4"/>
+    <path d="M626,670 Q623,616 631,668" stroke="#6ab800" stroke-width="3.5"/>
+    <path d="M642,670 Q646,614 650,668" stroke="#78cc00" stroke-width="4"/>
+    <path d="M657,671 Q660,617 664,668" stroke="#6ab800" stroke-width="4"/>
+    <path d="M672,671 Q669,614 677,669" stroke="#78cc00" stroke-width="3.5"/>
+    <path d="M688,671 Q692,618 696,669" stroke="#6ab800" stroke-width="4"/>
+    <path d="M703,672 Q700,615 708,669" stroke="#78cc00" stroke-width="4"/>
+    <path d="M718,672 Q722,619 726,670" stroke="#6ab800" stroke-width="3.5"/>
+    <path d="M733,672 Q730,614 738,670" stroke="#78cc00" stroke-width="4"/>
+    <path d="M748,673 Q752,617 756,671" stroke="#6ab800" stroke-width="4"/>
+    <path d="M763,673 Q760,615 768,671" stroke="#78cc00" stroke-width="3.5"/>
+    <path d="M778,674 Q782,618 785,671" stroke="#6ab800" stroke-width="4"/>
+  </g>
+</g>
+
+</svg>
